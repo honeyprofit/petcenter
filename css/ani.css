@@ -1,0 +1,321 @@
+/* CSS ANIMATION CLASSES  1ST HAM*/
+
+.top {
+    animation: topRotate .6s forwards;
+    -webkit-animation-name: topRotate;
+    -webkit-animation-duration: .6s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: topRotate .6s forwards;
+    -ms-animation: topRotate .6s forwards;
+    -o-animation: topRotate .6s forwards;
+}
+
+.middle {
+    animation: fadeOut .2s forwards;
+    -webkit-animation-name: fadeOut;
+    -webkit-animation-duration: .2s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animtion: fadeOut .2s forwards;
+    -ms-animtion: fadeOut .2s forwards;
+    -o-animtion: fadeOut .2s forwards;
+}
+
+.bottom {
+    animation: bottomRotate .6s forwards;
+    -webkit-animation-name: bottomRotate;
+    -webkit-animation-duration: .6s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: bottomRotate .6s forwards;
+    -ms-animation: bottomRotate .6s forwards;
+    -o-animation: bottomRotate .6s forwards;
+}
+
+.backMT {
+    animation: menuTopStart .6s forwards;
+    -webkit-animation-name: menuTopStart;
+    -webkit-animation-duration: .6s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: menuTopStart .6s forwards;
+    -ms-animation: menuTopStart .6s forwards;
+    -o-animation: menuTopStart .6s forwards;
+}
+
+.backM {
+    animation: fadeIn 1s forwards;
+    -webkit-animation: fadeIn 1s forwards;
+    -moz-animation: fadeIn 1s forwards;
+    -ms-animation: fadeIn 1s forwards;
+    -o-animation: fadeIn 1s forwards;
+}
+
+.backMB {
+    animation: menuBottomStart .6s forwards;
+    -webkit-animation-name: menuBottomStart;
+    -webkit-animation-duration: .6s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: menuBottomStart .6s forwards;
+    -ms-animation: menuBottomStart .6s forwards;
+    -o-animation: menuBottomStart .6s forwards;
+}
+
+
+/* CSS ANIMATION CLASSES  2ST HAM*/
+
+.fadeOut {
+    animation: fadeOut .2s forwards ease;
+}
+
+.fadeIn {
+    animation: fadeIn 2.5s forwards ease;
+}
+
+.hamTopX {
+    animation: xAnimateTop 2s forwards ease;
+}
+
+.hamBttmX {
+    animation: xAnimateBttom 2s forwards ease;
+}
+
+.hamAnimateTop {
+    animation: hamAnimateTop 2s forwards ease;
+}
+
+.hamAnimateBttom {
+    animation: hamAnimateBttom 2s forwards ease;
+}
+
+
+/* CSS KEYFRAME ANIMATIONS FOR 1ST HAM */
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes topRotate {
+    70% {
+        transform: translatey(14px);
+    }
+    100% {
+        transform: translatey(14px) rotate(45deg);
+    }
+}
+
+@-webkit-keyframes topRotate {
+    70% {
+        transform: translatey(14px);
+        -webkit-transform: translatey(14px);
+    }
+    100% {
+        transform: translatey(14px) rotate(45deg);
+        -webkit-transform: translatey(14px) rotate(45deg);
+    }
+}
+
+@keyframes bottomRotate {
+    70% {
+        transform: translatey(-13px);
+    }
+    100% {
+        transform: translatey(-13px) rotate(-45deg);
+    }
+}
+
+@-webkit-keyframes bottomRotate {
+    70% {
+        transform: translatey(-13px);
+        -webkit-transform: translatey(-13px);
+    }
+    100% {
+        transform: translatey(-13px) rotate(-45deg);
+        -webkit-transform: translatey(-13px) rotate(-45deg);
+    }
+}
+
+@keyframes menuTopStart {
+    0% {
+        transform: translatey(14px) rotate(-45deg);
+    }
+    60% {
+        transform: translatey(14px) rotate(0deg);
+    }
+    100% {
+        transform: translatey(0px) rotate(0deg);
+    }
+}
+
+@-webkit-keyframes menuTopStart {
+    0% {
+        transform: translatey(14px) rotate(-45deg);
+        -webkit-transform: translatey(14px) rotate(-45deg);
+    }
+    60% {
+        transform: translatey(14px) rotate(0deg);
+        -webkit-transform: translatey(14px) rotate(0deg);
+    }
+    100% {
+        transform: translatey(0px) rotate(0deg);
+        -webkit-transform: translatey(0px) rotate(0deg);
+    }
+}
+
+@keyframes menuBottomStart {
+    0% {
+        transform: translatey(-6px) rotate(45deg);
+    }
+    60% {
+        transform: translatey(-6px) rotate(0deg);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@-webkit-keyframes menuBottomStart {
+    0% {
+        transform: translatey(-6px) rotate(45deg);
+        -webkit-transform: translatey(-6px) rotate(45deg);
+    }
+    60% {
+        transform: translatey(-6px) rotate(0deg);
+        -webkit-transform: translatey(-6px) rotate(0deg);
+    }
+    100% {
+        transform: translatey(0px);
+        -webkit-transform: translatey(0px);
+    }
+}
+
+
+/* CSS KEYFRAME ANIMATIONS FOR 2ST HAM */
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes xAnimateTop {
+    0% {
+        transform: translatey(0px) rotate(0deg);
+    }
+    20% {
+        transform: translatey(10px) scale(1) rotate(0deg);
+    }
+    50% {
+        transform: translatey(10px) scale(0) rotate(0deg);
+    }
+    70% {
+        transform: translatey(10px) scale(0) rotate(45deg);
+    }
+    100% {
+        transform: translatey(10px) scale(1) rotate(45deg);
+    }
+}
+
+@keyframes xAnimateBttom {
+    0% {
+        transform: translatey(0px) rotate(0deg);
+    }
+    20% {
+        transform: translatey(-10px) scale(1) rotate(0deg);
+    }
+    50% {
+        transform: translatey(-10px) scale(0) rotate(0deg);
+    }
+    70% {
+        transform: translatey(-10px) scale(0) rotate(-45deg);
+    }
+    100% {
+        transform: translatey(-10px) scale(1) rotate(-45deg);
+    }
+}
+
+@keyframes hamAnimateTop {
+    0% {
+        transform: rotate(45deg) translateY(7px) translateX(7px);
+    }
+    20% {
+        transform: rotate(45deg) translateY(7px) translateX(7px);
+    }
+    50% {
+        transform: rotate(0deg) translateY(7px) translateX(7px);
+    }
+    70% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes hamAnimateBttom {
+    0% {
+        transform: rotate(-45deg) translateY(-7px) translateX(7px);
+    }
+    20% {
+        transform: rotate(-45deg) translateY(-7px) translateX(7px);
+    }
+    50% {
+        transform: rotate(0deg) translateY(-7px) translateX(7px);
+    }
+    70% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
